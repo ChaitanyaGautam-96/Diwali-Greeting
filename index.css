@@ -74,5 +74,21 @@ body, html {
     0% { transform: translateY(-2px) scale(1); opacity: 0.8; }
     100% { transform: translateY(0) scale(1.1); opacity: 1; }
   }
+
+  @media (max-width: 768px) {
+    .background {
+      background: url('path/to/your-background.jpg') top/cover no-repeat;
+      background-attachment: scroll; /* Allows the background to scroll on smaller screens */
+    }
+  }
   
+  /* Mobile screens (480px and below) */
+  @media (max-width: 480px) {
+    .background {
+      background: url('path/to/your-background.jpg') top/contain no-repeat;
+      background-position: top center;
+      background-size: contain; /* Ensures the full image is visible on small screens */
+      background-attachment: scroll;
+    }
+  }
   
