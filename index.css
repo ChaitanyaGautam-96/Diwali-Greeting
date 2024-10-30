@@ -77,7 +77,7 @@ body, html {
 
   @media (max-width: 768px) {
     .background {
-      background: url('path/to/your-background.jpg') top/cover no-repeat;
+      background: url('./resources/background-img.png') top/cover no-repeat;
       background-attachment: scroll; /* Allows the background to scroll on smaller screens */
     }
   }
@@ -85,7 +85,7 @@ body, html {
   /* Mobile screens (480px and below) */
   @media (max-width: 480px) {
     .background {
-      background: url('path/to/your-background.jpg') top/contain no-repeat;
+      background: url('./resources/background-img.png') top/contain no-repeat;
       background-position: top center;
       background-size: contain; /* Ensures the full image is visible on small screens */
       background-attachment: scroll;
